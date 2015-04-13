@@ -93,18 +93,15 @@
  */
 {
     function Foo() {
-        this.values = [];
     }
 
     Foo.prototype.stats = {
-        count: 0,
-        timestamp: null
+        count: 0
             // some other statistics
     };
 
     Foo.prototype.trackStats = function() {
         this.stats.count++;
-        this.stats.timestamp = new Date();
     }
 
     Foo.prototype.someFunction = function() {

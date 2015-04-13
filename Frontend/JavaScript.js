@@ -193,11 +193,9 @@
  */
 {
     for (var i = 0; i < 5; i++) {
-        (function(realValue) {
-            setTimeout(function() {
-                console.log(realValue);
-            }, 0);
-        })(i);
+        setTimeout(function() {
+            console.log(i);
+        }, 0);
     }
 }
 

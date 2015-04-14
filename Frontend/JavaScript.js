@@ -44,8 +44,8 @@
 /**
  * @number 1.
  * @level Advanced(?).
- * @topic: Property lookup uses prototype chain, assigning does not.
- * @description : What will be printed in console.
+ * @topic Property lookup uses prototype chain, assigning does not.
+ * @description What will be printed in console.
  * @answer: 
  *      console.log(bar.count) prints 1
  *      console.log(buz.count) prints 0
@@ -370,6 +370,103 @@
     console.log(foo());
 }
 
+
+/**
+ * @number 13.
+ * @level Average
+ * @topic call() function
+ * @description What will be printed in console.
+ * @answer
+ *     8
+ */
+
+{
+    var count = 0;
+    function add(value) {
+        return this.count + value;
+    }
+    var bar = {
+        count: 5
+    };
+
+
+    console.log(add.call(bar, 3));
+}
+
+
+/**
+ * @number 14.
+ * @level Simple
+ * @topic Equality operator
+ * @description What will be printed in console.
+ * @answer
+ *     'equal'
+ */
+
+{
+    var foo;
+    var bar = null;
+    if(foo == bar) {
+        console.info('equal');
+    } else {
+        console.info('not equal');
+    }
+}
+
+
+/**
+ * @number 15.
+ * @level Average
+ * @topic Equality operator. Comparing objects
+ * @description What will be printed in console.
+ * @answer
+ *     'not equal'
+ *     'not equal'
+ */
+
+{
+    var foo = {
+        count: 5
+    };
+    var bar = {
+        count: 5
+    };
+
+    if(foo == bar) {
+        console.info('equal');
+    } else {
+        console.info('not equal');
+    }
+
+    if(foo === bar) {
+        console.info('equal');
+    } else {
+        console.info('not equal');
+    }
+}
+
+
+/**
+ * @number 16.
+ * @level Average / Advanced
+ * @topic Array length
+ * @description What will be printed in console.
+ * @answer
+ *     2
+ *     6
+ */
+
+{
+    var foo = [];
+    foo.push(1);
+    foo.push(2);
+
+    console.log(foo.length);
+
+    foo[5] = 6;
+
+    console.log(foo.length);
+}
 
 
 

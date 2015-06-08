@@ -42,7 +42,7 @@
 
 
 /**
- * @number 1.
+ * @number 1
  * @level Advanced(?).
  * @topic Property lookup uses prototype chain, assigning does not.
  * @description What will be printed in console.
@@ -83,12 +83,12 @@
 
 
 /**
- * @number 2.
- * @level Average.
- * @topic Prototype is a shared object.
- * @description What will be printed in console.
- * @additional How to change the code to make 'stats' calculate statistics for each instance independently.
- * @answer console.log(bar.stats.count) prints 2.
+ * @number 2
+ * @level Average
+ * @topic Prototype is a shared object
+ * @description What will be printed in console
+ * @additional How to change the code to make 'stats' calculate statistics for each instance independently
+ * @answer console.log(bar.stats.count) prints 2
  * 
  */
 {
@@ -123,10 +123,10 @@
 }
 
 /**
- * @number 3.
- * @level Simple.
+ * @number 3
+ * @level Simple
  * @topic Closures
- * @description What will be printed in console.
+ * @description What will be printed in console
  * @answer
  *     console.log(operation1(3)) prints 9
  *     console.log(operation2(2.5)) prints 5
@@ -149,10 +149,10 @@
 
 
 /**
- * @number 4.
+ * @number 4
  * @level Average/Advanced
  * @topic Closures and variable scopes
- * @description What will be printed in console.
+ * @description What will be printed in console
  * @answer
  *     console.log(operation(2)) prints 0
  *     console.log(operation(3)) prints 1
@@ -179,10 +179,10 @@
 
 
 /**
- * @number 5.
+ * @number 5
  * @level Simple
  * @topic Closures/Execution context
- * @description What will be printed in console.
+ * @description What will be printed in console
  * @answer
  *     5 5 5 5 5
  * @additional 
@@ -205,7 +205,7 @@
  * @number 6.
  * @level Simple
  * @topic Execution context
- * @description What will be printed in console.
+ * @description What will be printed in console
  * @answer
  *     7
  * @additional 
@@ -242,11 +242,11 @@
 
 
 /**
- * @number 7.
+ * @number 7
  * @level Average
  * @topic Execution context / this keyword
- * @description What will be printed in console.
- * @answer 0.
+ * @description What will be printed in console
+ * @answer 0
  * @additional
  *     How to change the code so it calculates count correctly.
  */
@@ -267,14 +267,14 @@
 }
 
 /**
- * @number 8.
+ * @number 8
  * @level Simple
  * @topic Tricks / Execution context / call built-in function
  * @description Explain what happens in this code block
  * @additional
  *     Ask about apply and bind function.
  * @answer
- *     Anonymous function is called on {} context with no parameters
+ *     Anonymous function is called on {} context with no parameters.
  */
 {
     (function() {}).call({})
@@ -282,21 +282,21 @@
 
 
 /**
- * @number 9.
+ * @number 9
  * @level Average
  * @topic Tricks / comma operator
- * @description What will be printed in console.
- * @answer 2. Operator comma returns its last operand so the code is equal to [1,2,3][1]
- * 
+ * @description What will be printed in console
+ * @answer 2
+ *         Operator comma returns its last operand so the code equals to [1,2,3][1]
  */
 {
     console.log([1, 2, 3][3, 2, 1])
 }
 
 /**
- * @number 10.
+ * @number 10
  * @level Simple / Average
- * @topic Variables scopes. Emulating private members.
+ * @topic Variables scopes, emulating private members
  * @description How to change the code so the count can be changed only inside Foo class
  * @answer
  *     'this.count = 0' changed to var 'count = 0' and all its using accordingly.
@@ -320,7 +320,7 @@
 }
 
 /**
- * @number 11.
+ * @number 11
  * @level Simple
  * @topic Prototypes
  * @description Change the code so every instance of Foo has addCount function
@@ -347,11 +347,11 @@
 
 
 /**
- * @number 12.
+ * @number 12
  * @level Simple / Average
  * @topic Variable scopes
  * @description What will be printed in console.
- * @answer 0.
+ * @answer 5 4 3 2 1 0 0
  * @additional
  *     What will be the output if foo returns i instead of bar
  *     Answer: -1
@@ -372,10 +372,10 @@
 
 
 /**
- * @number 13.
+ * @number 13
  * @level Average
  * @topic call() function
- * @description What will be printed in console.
+ * @description What will be printed in console
  * @answer
  *     8
  */
@@ -395,10 +395,10 @@
 
 
 /**
- * @number 14.
+ * @number 14
  * @level Simple
  * @topic Equality operator
- * @description What will be printed in console.
+ * @description What will be printed in console
  * @answer
  *     'equal'
  */
@@ -415,10 +415,10 @@
 
 
 /**
- * @number 15.
+ * @number 15
  * @level Average
  * @topic Equality operator. Comparing objects
- * @description What will be printed in console.
+ * @description What will be printed in console
  * @answer
  *     'not equal'
  *     'not equal'
@@ -447,7 +447,7 @@
 
 
 /**
- * @number 16.
+ * @number 16
  * @level Average / Advanced
  * @topic Array length
  * @description What will be printed in console.
